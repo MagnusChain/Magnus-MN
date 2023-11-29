@@ -180,10 +180,7 @@ done
     #Stopping daemon to create magnus.conf
     magnus-cli stop
     sleep 5
-cd ~/.magnus && rm -rf blocks chainstate evodb sporks
-cd ~/.magnus && wget http://188.166.34.78/bootstrap.tar.gz
-cd ~/.magnus && tar -xzvf bootstrap.tar.gz
-sudo rm -rf ~/.magnus/bootstrap.tar.gz
+
 
 
 # Create magnus.conf
@@ -203,13 +200,7 @@ masternode=1
 externalip=$publicip:$PORT
 masternodeaddr=$publicip:$PORT
 masternodeprivkey=$genkey
-addnode=46.101.204.27
-addnode=64.227.16.38
-addnode=143.110.254.55
-addnode=188.166.32.66
-addnode=188.166.32.112
-addnode=188.166.45.17
-addnode=188.166.34.78
+
 
 
 
