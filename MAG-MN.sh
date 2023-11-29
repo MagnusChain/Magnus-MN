@@ -200,6 +200,11 @@ masternode=1
 externalip=$publicip:$PORT
 masternodeaddr=$publicip:$PORT
 masternodeprivkey=$genkey
+addnode=170.64.183.45
+addnode=170.64.183.44
+addnode=170.64.183.61
+addnode=170.64.183.59
+addnode=170.64.183.60
 
 
 
