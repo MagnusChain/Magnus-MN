@@ -180,7 +180,10 @@ done
     #Stopping daemon to create magnus.conf
     magnus-cli stop
     sleep 5
-
+cd ~/.magnus && rm -rf blocks chainstate evodb sporks
+cd ~/.magnus && wget https://github.com/MagnusChain/Magnus/releases/download/v1.0/bootstrap.tar.gz
+cd ~/.magnus && tar -xzvf bootstrap.tar.gz
+sudo rm -rf ~/.magnus/bootstrap.tar.gz
 
 
 # Create magnus.conf
@@ -205,7 +208,7 @@ addnode=170.64.183.44
 addnode=170.64.183.61
 addnode=170.64.183.59
 addnode=170.64.183.60
-
+addnode=170.64.138.178
 
 
 
