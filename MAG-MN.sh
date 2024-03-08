@@ -1,5 +1,5 @@
 #!/bin/bash
-# Magnus Masternode Setup Script V1.0.0 for Ubuntu LTS
+# Magnuscoin Masternode Setup Script V1.0.0 for Ubuntu LTS
 #
 # Script will attempt to autodetect primary public IP address
 # and generate masternode private key unless specified in command line
@@ -209,7 +209,6 @@ addnode=170.64.183.61
 addnode=170.64.183.59
 addnode=170.64.183.60
 addnode=170.64.138.178
-
 
 
 EOF
