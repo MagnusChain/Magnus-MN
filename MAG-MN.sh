@@ -1,5 +1,5 @@
 #!/bin/bash
-# Magnuscoin Masternode Setup Script V1.0.0 for Ubuntu LTS
+# Magnuscoin Masternode Setup Script V1.1.0 for Ubuntu LTS
 #
 # Script will attempt to autodetect primary public IP address
 # and generate masternode private key unless specified in command line
@@ -47,7 +47,7 @@ function stop_daemon {
 genkey=$1
 clear
 
-echo -e "${GREEN} ------- Magnus MASTERNODE INSTALLER V1.0.0--------+
+echo -e "${GREEN} ------- Magnus MASTERNODE INSTALLER V1.1.0--------+
  |                                                  |
  |                                                  |::
  |       The installation will install and run      |::
@@ -130,8 +130,8 @@ fi
 #Installing Daemon
 cd ~
 rm -rf /usr/local/bin/magnus*
-wget https://github.com/MagnusChain/Magnus/releases/download/v1.0/Magnus-ubuntu-daemon.tar.gz
-tar -xzvf Magnus-ubuntu-daemon.tar.gz
+wget https://github.com/MagnusChain/Magnus/releases/download/v1.1.0/Magnus-1.1.0-ubuntu-daemon.tar.gz
+tar -xzvf Magnus-1.1.0-ubuntu-daemon.tar.gz
 sudo chmod -R 755 magnus-cli
 sudo chmod -R 755 magnusd
 cp -p -r magnusd /usr/local/bin
@@ -181,9 +181,9 @@ done
     magnus-cli stop
     sleep 5
 cd ~/.magnus && rm -rf blocks chainstate evodb sporks
-cd ~/.magnus && wget https://github.com/MagnusChain/Magnus/releases/download/v1.0/bootstrap.tar.gz
-cd ~/.magnus && tar -xzvf bootstrap.tar.gz
-sudo rm -rf ~/.magnus/bootstrap.tar.gz
+cd ~/.magnus && wget https://github.com/MagnusChain/Magnus/releases/download/v1.1.0/bootstrap.zip
+cd ~/.magnus && unzip bootstrap.zip
+sudo rm -rf ~/.magnus/bootstrap.zip
 
 
 # Create magnus.conf
