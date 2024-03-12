@@ -69,3 +69,17 @@ This guide will assist you in setting up a Magnus Masternode on a Linux Server r
 - ```magnus-cli getmasternodestatus```  
 
 **Сongratulations you did it!**
+
+# Guide for MAGNUS v1.1.0 MasterNode Update:
+
+The instructions below are designed for users currently running an older version of MAGNUS v1.0.0 need update to v1.1.0
+
+```
+rm -rf MAG-MN-UPDATE.sh
+
+wget -q https://raw.githubusercontent.com/MagnusChain/Magnus-MN/main/MAG-MN-UPDATE.sh
+
+sudo chmod +x MAG-MN-UPDATE.sh
+
+./MAG-MN-UPDATE.sh
+```
